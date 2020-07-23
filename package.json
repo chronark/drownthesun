@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/react-scroll": "^1.5.4",
+    "@types/react-scroll": "^1.5.5",
     "logrocket": "^1.0.10",
     "next": "^9.4.4",
     "react": "^16.13.1",
