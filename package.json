@@ -34,7 +34,7 @@
     "eslint-plugin-tailwind": "^0.2.0",
     "lighthouse": "^6.1.1",
     "postcss-import": "^12.0.1",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.1",
     "tailwindcss": "^1.5.1",
     "typescript": "^3.8.3"
   }
