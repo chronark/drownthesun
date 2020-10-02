@@ -32,7 +32,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-tailwind": "^0.2.0",
-    "lighthouse": "^6.1.1",
+    "lighthouse": "^6.4.0",
     "postcss-import": "^12.0.1",
     "prettier": "^2.1.1",
     "tailwindcss": "^1.5.1",
