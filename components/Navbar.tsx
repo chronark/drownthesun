@@ -62,6 +62,7 @@ const Navbar = (props: Props) => {
                             }`}
                         >
                             <NavbarButton to="index" name="Home"></NavbarButton>
+                            <NavbarButton to="album" name="New Album"></NavbarButton>
                             <NavbarButton to="tour" name="Tour"></NavbarButton>
                             <NavbarButton to="contact" name="Contact"></NavbarButton>
                         </div>

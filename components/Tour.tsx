@@ -1,5 +1,5 @@
 import Concert from "./Concert"
-import {ConcertType} from "../public/content/concerts"
+import { ConcertType } from "../public/content/concerts"
 import { NextPage } from "next"
 import SectionHeadline from "./SectionHeadline"
 
@@ -26,15 +26,13 @@ const Tour: NextPage<Props> = ({ concerts }) => {
     )
 
     return (
-        <div className="max-w-screen-xl mx-auto">
-            <div className="max-w-screen-lg mx-auto">
-                <SectionHeadline name="Upcoming Tour / Concerts"></SectionHeadline>
+        <div className="mx-auto">
+            <SectionHeadline name="Upcoming Tour / Concerts"></SectionHeadline>
 
-                <p className="px-8 mt-4 text-xl leading-7 text-gray-500 sm:mx-auto md:text-center">
-                    Mit dem neuen Album sind wir im Dezember wieder auf Tour. Oder sowas ähnliches.
-                </p>
-                {tourDates}
-            </div>
+            <p className="px-8 mt-4 text-xl leading-7 text-carbon-300 sm:mx-auto md:text-center">
+                Mit dem neuen Album sind wir im Dezember wieder auf Tour. Oder sowas ähnliches.
+            </p>
+            {tourDates}
         </div>
     )
 }
