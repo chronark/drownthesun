@@ -32,7 +32,10 @@ const Tour: NextPage<Props> = ({ concerts }) => {
             <p className="px-8 mt-4 text-xl leading-7 text-carbon-300 sm:mx-auto md:text-center">
                 Mit dem neuen Album sind wir im Dezember wieder auf Tour. Oder sowas ähnliches.
             </p>
+            <div className="">
+
             {tourDates}
+            </div>
         </div>
     )
 }
