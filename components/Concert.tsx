@@ -25,9 +25,9 @@ const Button = (props: ButtonProps) => (
 
 const Concert = (props: Props) => (
     <div className="justify-between p-4 border-b md:flex border-carbon-800">
-        <div className="flex justify-center min-w-0 md:justify-start">
+        <div className="flex justify-start min-w-0">
             <div>
-                <h2 className="text-2xl font-bold text-carbon-50 leading-7 sm:text-3xl sm:leading-9 sm:truncate">
+                <h2 className="text-2xl font-bold leading-7 text-carbon-50 sm:text-3xl sm:leading-9 sm:truncate">
                     {props.date}
                 </h2>
                 <div className="flex items-center mt-2">
@@ -48,7 +48,7 @@ const Concert = (props: Props) => (
                     >
                         <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
                     </svg>
-                    <a href="#" className="text-carbon-200 hover:text-carbon-50 transition duration-200">
+                    <a href="#" className="transition duration-200 text-carbon-200 hover:text-carbon-50">
                         {props.venue}
                     </a>
                 </div>
@@ -56,7 +56,7 @@ const Concert = (props: Props) => (
         </div>
         <div className="flex justify-center mt-2 md:mt-0 md:ml-4 md:justify-start md:items-center">
             <Button
-                className=" text-gray-900 bg-carbon-50 hover:text-black hover:bg-white"
+                className="text-gray-900 bg-carbon-50 hover:text-black hover:bg-white"
                 name="Event"
                 href="#"
             ></Button>
