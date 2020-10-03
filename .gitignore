@@ -108,3 +108,6 @@ dist
 .next/cache
 out/
 .now
+
+# Lighthouse
+*.report.html
