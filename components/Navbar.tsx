@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import DropdownButton from "./DropdownButton"
 import Hamburger from "./Hamburger"
 import NavbarButton from "./NavbarButton"
-import { useRouter } from "next/router"
+import Link from "next/link"
 
 type Props = {
     desktopAlwaysOpen?: boolean
@@ -62,9 +62,13 @@ const Navbar = (props: Props) => {
                             }`}
                         >
                             <NavbarButton to="index" name="Home"></NavbarButton>
-                            <NavbarButton to="album" name="New Album"></NavbarButton>
+                            <NavbarButton to="album" name="Neues Album"></NavbarButton>
                             <NavbarButton to="tour" name="Tour"></NavbarButton>
-                            <NavbarButton to="contact" name="Contact"></NavbarButton>
+                            <Link href="mailto:info@drownthesun.com">
+                                <a className="ml-8 text-sm font-bold transition ease-in-out duration-250 text-carbon-100 hover:text-white focus:outline-none">
+                                    Kontakt
+                                </a>
+                            </Link>
                         </div>
                     </nav>
                 </div>

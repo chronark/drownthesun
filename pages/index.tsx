@@ -19,35 +19,36 @@ const Home: NextPage<Props> = ({ concerts }) => {
         <Layout>
             <Navbar></Navbar>
 
-            <section className="min-h-screen pt-16 overflow-hidden md:pt-0" id="index">
-                <div className="relative z-10 flex flex-col min-h-screen pb-8 bg-carbon-900 lg:max-w-2xl lg:w-full lg:pb-28">
+            <section className="pt-16 md:pt-0" id="index">
+                <div className="relative z-10 flex flex-col pb-8 bg-carbon-900 lg:max-w-2xl lg:w-full lg:pb-28">
                     <div className="flex flex-grow px-4 mx-auto mt-10 max-w-screen-xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                         <div className="flex flex-col">
                             <div className="h-full sm:text-center lg:text-left">
                                 <div className="md:mt-20">
                                     <Headline></Headline>
                                 </div>
-                                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start lg:mt-16">
                                     <div className="rounded-sm ">
                                         <a
                                             href="https://open.spotify.com/artist/2yFB2TDFWStvT5nYj8g8Hc?si=ZfTcfzjERci_O825wNvwFw"
-                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent shadow leading-6 transition duration-150 ease-in-out text-carbon-900 bg-carbon-50 hover:text-black hover:shadow-glow hover:bg-white focus:outline-none focus:shadow-outline focus:border-red-300 md:py-4 md:text-lg md:px-10"
+                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium bg-red-600 border border-transparent shadow leading-6 transition duration-150 ease-in-out text-carbon-900 hover:text-black hover:shadow-glow hover:bg-white focus:outline-none focus:shadow-outline focus:border-red-300 md:py-4 md:text-lg md:px-10"
                                             target="blank"
                                         >
-                                            Listen
+                                            <span>Hör rein!</span>
                                         </a>
                                     </div>
-                                    <div className="mt-3 rounded-sm sm:mt-0 sm:ml-3">
+
+                                    {/* <div className="mt-3 rounded-sm sm:mt-0 sm:ml-3">
                                         <a
-                                            href=""
-                                            className="flex items-center justify-center w-full px-8 py-3 text-base text-black bg-red-600 border border-transparent leading-6 transition duration-150 ease-in-out font-medium-md hover:bg-red-500 focus:outline-none focus:shadow-outline md:py-4 md:text-lg md:px-10"
+                                            href="mailto:info@drownthesun.com"
+                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-gray-100 transition duration-150 ease-in-out hover:text-carbon-100 focus:outline-none focus:shadow-outline md:py-4 md:text-lg md:px-10"
                                         >
-                                            Pre-Order Now
+                                            Kontakt
                                         </a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
-                            <div className="mx-auto mb-16 md:mb-8 lg:flex lg:justify-start lg:max-w-xs lg:mx-0">
+                            <div className="mx-auto mt-24 md:mb-8 lg:flex lg:justify-start lg:max-w-xs lg:mx-0">
                                 <SocialMedia></SocialMedia>
                             </div>
                         </div>
@@ -61,12 +62,8 @@ const Home: NextPage<Props> = ({ concerts }) => {
                         <polygon points="50,0 100,0 50,100 0,100" />
                     </svg>
                 </div>
-                <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                    <img
-                        className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
-                        src="img/header.jpeg"
-                        alt=""
-                    />
+                <div className="top-0 right-0 lg:absolute lg:w-1/2">
+                    <img className="object-cover w-full lg:h-full" src="img/header.jpeg" alt="Drown the sun band" />
                 </div>
             </section>
             <section className="pt-8 md:pt-40 bg-carbon-900" id="album">
