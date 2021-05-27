@@ -2,7 +2,7 @@ import { NextComponentType } from "next"
 import React from "react"
 import SocialMediaIcon from "./SocialMediaIcon"
 const SocialMedia: NextComponentType = () => (
-    <div className="flex items-center justify-between fill-current space-x-8 text-carbon-500 md:space-x-20 lg:space-x-24">
+    <div className="flex items-center justify-between space-x-8 fill-current text-carbon-100 md:space-x-20 lg:space-x-24">
         <SocialMediaIcon>
             <a
                 aria-label="Facebook"

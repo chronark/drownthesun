@@ -1,5 +1,5 @@
 import React from "react"
-
+import Link from "next/link"
 import Headline from "../components/Headline"
 import Layout from "../components/Layout"
 import { ConcertType, concerts } from "../public/content/concerts"
@@ -18,61 +18,45 @@ const Home: NextPage<Props> = ({ concerts }) => {
     return (
         <Layout>
             <Navbar></Navbar>
-
-            <section className="pt-16 md:pt-0" id="index">
-                <div className="relative z-10 flex flex-col pb-8 bg-carbon-900 lg:max-w-2xl lg:w-full lg:pb-28">
-                    <div className="flex flex-grow px-4 mx-auto mt-10 max-w-screen-xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-                        <div className="flex flex-col">
+            <section className="pt-20 md:pt-0" id="index">
+                <div
+                    className="flex items-center justify-center w-screen bg-center bg-cover sm:h-screen"
+                    style={{
+                        backgroundImage: "url(img/header.jpeg)",
+                    }}
+                >
+                    <div className="flex items-center justify-center w-full h-full pt-8 bg-black bg-opacity-75 md:pt-0">
+                        <div className="flex flex-col px-8">
                             <div className="h-full sm:text-center lg:text-left">
                                 <div className="md:mt-20">
                                     <Headline></Headline>
                                 </div>
-                                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start lg:mt-16">
-                                    <div className="rounded-sm ">
+                                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:mt-16">
+                                    <Link href="https://open.spotify.com/artist/2yFB2TDFWStvT5nYj8g8Hc?si=ZfTcfzjERci_O825wNvwFw">
                                         <a
-                                            href="https://open.spotify.com/artist/2yFB2TDFWStvT5nYj8g8Hc?si=ZfTcfzjERci_O825wNvwFw"
-                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium bg-red-600 border border-transparent shadow leading-6 transition duration-150 ease-in-out text-carbon-900 hover:text-black hover:shadow-glow hover:bg-white focus:outline-none focus:shadow-outline focus:border-red-300 md:py-4 md:text-lg md:px-10"
+                                            className="items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 transition duration-150 ease-in-out bg-red-600 border border-transparent rounded-sm shadow-xl md:flex text-carbon-900 hover:text-black hover:shadow-glow hover:bg-white focus:outline-none focus:shadow-outline focus:border-red-300 md:py-4 md:text-lg md:px-10 md:max-w-xs"
                                             target="blank"
                                         >
-                                            <span>Hör rein!</span>
+                                            Hör rein!
                                         </a>
-                                    </div>
-
-                                    {/* <div className="mt-3 rounded-sm sm:mt-0 sm:ml-3">
-                                        <a
-                                            href="mailto:info@drownthesun.com"
-                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-gray-100 transition duration-150 ease-in-out hover:text-carbon-100 focus:outline-none focus:shadow-outline md:py-4 md:text-lg md:px-10"
-                                        >
-                                            Kontakt
-                                        </a>
-                                    </div> */}
+                                    </Link>
                                 </div>
                             </div>
-                            <div className="mx-auto mt-24 md:mb-8 lg:flex lg:justify-start lg:max-w-xs lg:mx-0">
+                            <div className="mx-auto mt-8 mb-4 md:mt-24 md:mb-8 lg:flex lg:justify-center">
                                 <SocialMedia></SocialMedia>
                             </div>
                         </div>
                     </div>
-                    <svg
-                        className="absolute inset-y-0 right-0 hidden w-48 h-full transform translate-x-1/2 lg:block text-carbon-900"
-                        fill="currentColor"
-                        viewBox="0 0 100 100"
-                        preserveAspectRatio="none"
-                    >
-                        <polygon points="50,0 100,0 50,100 0,100" />
-                    </svg>
-                </div>
-                <div className="top-0 right-0 lg:absolute lg:w-1/2">
-                    <img className="object-cover w-full lg:h-full" src="img/header.jpeg" alt="Drown the sun band" />
                 </div>
             </section>
-            <section className="pt-8 md:pt-40 bg-carbon-900" id="album">
+
+            <section className="container pt-8 mx-auto md:pt-40 bg-carbon-900" id="album">
                 <Album></Album>
             </section>
-            <section className="pt-8 md:pt-40 bg-carbon-900" id="tour">
+            <section className="container pt-8 mx-auto md:pt-40 bg-carbon-900" id="tour">
                 <Tour concerts={concerts}></Tour>
             </section>
-            <footer className="text-carbon-400">
+            <footer className="container mx-auto text-carbon-400">
                 <div className="flex flex-col items-center justify-between px-5 py-8 mx-auto space-y-2 sm:space-y-0 sm:flex-row">
                     <span className="mt-4 text-sm text-carbon-300 sm:py-2 sm:mt-0">© 2020 Drown The Sun</span>
                     <div className="flex items-center space-x-6 text-carbon-600">
