@@ -29,7 +29,7 @@ const Navbar = (props: Props) => {
 
     return (
         <>
-            <div className="fixed z-50 w-full">
+            <div className="fixed z-10 w-full">
                 <div
                     className={`bg-carbon-900 left-0 w-screen h-20 fixed transform transition duration-500 ease-in-out opacity-0 ${
                         scrolled ? "opacity-100" : "-translate-y-full delay-200"
@@ -57,7 +57,7 @@ const Navbar = (props: Props) => {
                                         <Transition appear show={mobileOpen} as={Fragment}>
                                             <Dialog
                                                 as="div"
-                                                className="fixed inset-0 z-10 overflow-y-auto"
+                                                className="fixed inset-0 z-50 overflow-y-auto"
                                                 onClose={() => setMobileOpen(false)}
                                             >
                                                 <div className="min-h-screen px-4 text-center">
@@ -89,7 +89,7 @@ const Navbar = (props: Props) => {
                                                         leaveFrom="opacity-100 scale-100"
                                                         leaveTo="opacity-0 scale-95"
                                                     >
-                                                        <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-gray-200 shadow-xl rounded-2xl">
+                                                        <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-gray-200 rounded shadow-xl">
                                                             <div className="relative grid gap-6 px-5 py-6 sm:gap-8 sm:p-8">
                                                                 <Link href="/">
                                                                     <a className="flex items-start p-3 -m-3 rounded hover:bg-gray-300">
