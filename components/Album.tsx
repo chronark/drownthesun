@@ -2,7 +2,7 @@ import React from "react"
 import Image from "next/image"
 export const Album = () => {
     return (
-        <div className="bg-gray-50">
+        <div>
             <div className="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
                 <h2 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10">
                     <span className="sm:text-6xl">Neue Single "Confidence"</span>
