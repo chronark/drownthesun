@@ -30,7 +30,7 @@ const Tour: NextPage<Props> = ({ concerts }) => {
             <SectionHeadline name="Tour / Concerts"></SectionHeadline>
 
             <p className="px-8 mt-4 text-xl leading-7 text-carbon-300 sm:mx-auto md:text-center">
-                Mit den enuen Songs geht es bald wieder los!
+                Mit den neuen Songs geht es bald wieder los!
             </p>
             <div className="">{tourDates}</div>
         </div>
