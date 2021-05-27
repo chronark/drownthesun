@@ -5,7 +5,9 @@ export const Album = () => {
         <div>
             <div className="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
                 <h2 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10">
-                    <span className="sm:text-6xl">Neue Single "Confidence"</span>
+                    <span className="sm:text-6xl">
+                        Neue Single: <span className="underline ">Confidence</span>
+                    </span>
                 </h2>
                 <div className="flex mt-8 lg:flex-shrink-0 lg:mt-0">
                     <div className="inline-flex shadow">
@@ -27,9 +29,13 @@ export const Album = () => {
                     </div> */}
                 </div>
             </div>
-            <div className="flex flex-col items-center justify-center w-full gap-8 md:flex-row">
-                <Image src="/img/dws_artwork1.jpg" width="400" height="400" />
-                <Image src="/img/dws2ohne logo.jpg" width="400" height="400" />
+            <div className="flex flex-col items-center justify-center w-full space-y-8 md:space-x-8 md:space-y-0 md:flex-row">
+                <div>
+                    <Image src="/img/dws_artwork1.jpg" width="400" height="400" />
+                </div>
+                <div>
+                    <Image src="/img/dws2ohne logo.jpg" width="400" height="400" />
+                </div>
             </div>
         </div>
     )
