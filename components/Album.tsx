@@ -27,11 +27,9 @@ export const Album = () => {
                     </div> */}
                 </div>
             </div>
-            <div className="flex items-center justify-center w-full">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                    <Image src="/img/dws_artwork1.jpg" width="400" height="400" />
-                    <Image src="/img/dws2ohne logo.jpg" width="400" height="400" />
-                </div>
+            <div className="flex flex-col items-center justify-center w-full gap-8 md:flex-row">
+                <Image src="/img/dws_artwork1.jpg" width="400" height="400" />
+                <Image src="/img/dws2ohne logo.jpg" width="400" height="400" />
             </div>
         </div>
     )

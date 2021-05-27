@@ -58,7 +58,9 @@ const Home: NextPage<Props> = ({ concerts }) => {
             </section>
             <footer className="container mx-auto text-carbon-400">
                 <div className="flex flex-col items-center justify-between px-5 py-8 mx-auto space-y-2 sm:space-y-0 sm:flex-row">
-                    <span className="mt-4 text-sm text-carbon-300 sm:py-2 sm:mt-0">© {new Date().getUTCFullYear()} Drown The Sun</span>
+                    <span className="mt-4 text-sm text-carbon-300 sm:py-2 sm:mt-0">
+                        © {new Date().getUTCFullYear()} Drown The Sun
+                    </span>
                     <div className="flex items-center space-x-6 text-carbon-600">
                         <a
                             aria-label="Facebook"
