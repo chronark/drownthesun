@@ -1,6 +1,4 @@
-import { HtmlProps } from "next/dist/shared/lib/html-context";
 import Link from "next/link";
-import { SVGProps } from "react";
 
 const navigation = {
   main: [
@@ -66,18 +64,17 @@ export const Footer: React.FC = () => {
     <footer className="">
       <div className="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
         <nav
-          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+          className="flex justify-center space-x-10"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6">
-              <a
-                href={item.href}
-                className="text-sm leading-6 text-carbon-400 hover:text-carbon-100"
-              >
-                {item.name}
-              </a>
-            </div>
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-sm leading-6 text-carbon-400 hover:text-carbon-100"
+            >
+              {item.name}
+            </Link>
           ))}
         </nav>
         <div className="mt-10 flex justify-center space-x-10">

@@ -24,7 +24,7 @@ export default function Home() {
         />
 
         <div className="w-full px-6 flex flex-col justify-center h-screen items-center ">
-          <h1 className="text-6xl text-center uppercase font-black tracking-tight  text-white sm:text-8xl lg:col-span-2 xl:col-auto">
+          <h1 className="text-6xl text-center uppercase font-bold xl:font-black tracking-tight  text-white sm:text-8xl lg:col-span-2 xl:col-auto">
             Drown The <span className="text-red-600">Sun</span>
           </h1>
           <div className="mt-6 ">
